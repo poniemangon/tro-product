@@ -165,62 +165,54 @@ main {padding-top: 160px;}
 
 .product-section {background-color: var(--lightblue); }
 
-.product-section .container {padding: 40px 0;  column-gap: 20px; flex-wrap: wrap; justify-content: center; row-gap: 40px; }
+.product-section .container {padding: 40px 0;  column-gap: 20px;  justify-content: space-between; row-gap: 40px; }
 
-.product-section .container .misc1 {position: relative;}
+.product-section .container .misc-one {position: relative;}
 
-.product-section .container .misc2 {position: relative;}
-
-.product-section .container .col1 {flex-direction: column; row-gap: 20px; height: 300px; }
-
-.product-section .container .col1 img {height: 50%;}
-
-.product-section .container .col2 {max-height: 600px;}
-
-.product-section .container .col3 {display: flex; flex-direction: column; row-gap: 20px; width: 40%;}
-
-.product-section .container .col3 h3.price {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 700; line-height: 1; color: white;}
-
-.product-section .container .col3 h3 {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 300; line-height: 1; color: white;}
-
-.product-section .container .col3 h4 {color: white; font-size: 15px; font-weight: 400; text-transform: uppercase; font-family: 'Open Sans', sans-serif;}
-.product-section .container .col3 h4 span {font-weight: 800; font-size: 15px;}
-
-.product-section .container .col3 h5 {font-size: 13px; color: white; font-weight: 400; }
-.product-section .container .col3 h5 span{font-size: 13px; color: white; font-weight: 700; text-transform: uppercase;}
-
-.product-section .container .col3 p {font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 400; color: white; }
-
-.product-section .container .col3 button {background-color: var(--lightred); color: white; width: 100%; font-size: 16px; }
-.product-section .container .col3 form {display: flex; flex-direction: column;row-gap: 20px;}
-
-.product-section .container .col3 .payment {column-gap: 10px; border-top: 1px solid #8cd0d0; border-bottom: 1px solid #8cd0d0; padding: 15px 0}
-
-.product-section .container .col3 .selectors {column-gap: 10px; flex-wrap: wrap; text-align: left; row-gap: 10px;}
-.product-section .container .col3 .selectors p{font-size: 14px; padding-bottom: 5px;}
-.product-section .container .col3 .selectors select {background-color: #2a9c9c; border-bottom-right-radius: 10px; color: white; border: none; width: 150px; padding: 10px 15px;}
-.product-section .container .col3 .selectors input {background-color: #2a9c9c; border-bottom-right-radius: 10px; color: white; border: none; width: 80px; padding: 10px 15px; height: 17px;}
-
-.product-section .container .col3 i {color: white; font-size: 24px; padding-right: 20px;}
+.product-section .container .misc-two {position: relative;}
 
 
-@media (max-width: 1400px){
-    .product-section .container .col3 .payment {justify-content: center; flex-wrap: wrap; row-gap: 10px;}
-    .product-section .container .col1 {position: relative; right: 66px;}
-    .product-section .container .col2 {position: relative; right: 66px;}
-    .product-section .container .col3 .icons {margin: auto; flex-direction: column; row-gap: 10px;}
-    .product-section .container .col3 {width: 100%; justify-content: center; align-items: center; text-align: center;}
-    .product-section .container .col3 .selectors {align-items: center; justify-content: center;}
-}
+.product-section .container .col-first {column-gap: 20px; width: calc(65% - 30px); flex-wrap: wrap;}
+.product-section .container .col-first .main-image {width: calc(75% - 20px); max-height: 666px;}
+.product-section .container .col-first .sec-images {width: calc(25% - 20px); height: 50%; flex-direction: column; row-gap: 20px;}
 
-@media (max-width: 920px){
-    .product-section .container .col1 {position: relative; right: 0px;}
-    .product-section .container .col2 {position: relative; right: 0px;}
-    .product-section .container .col1 {flex-direction: row; height: 150px; column-gap: 20px;}
-    .product-section .container .col1 img {height: 100%;}
-    .product-section .container .col2 {order: -1;}
-}
+.product-section .container .col-third {display: flex; flex-direction: column; row-gap: 29px;  align-items: stretch; max-width: 40%;}
 
+
+/* estilos de textos columna 3 */
+
+.product-section .container .col-third  h3.price {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 700; line-height: 1; color: white;}
+
+.product-section .container .col-third  h3 {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 300; line-height: 1; color: white;}
+
+.product-section .container .col-third  h4 {color: white; font-size: 15px; font-weight: 400; text-transform: uppercase; font-family: 'Open Sans', sans-serif;}
+
+.product-section .container .col-third  h4 span {font-weight: 800; font-size: 15px;}
+
+.product-section .container .col-third  h5 {font-size: 13px; color: white; font-weight: 400; }
+
+.product-section .container .col-third  h5 span{font-size: 13px; color: white; font-weight: 700; text-transform: uppercase;}
+
+.product-section .container .col-third  p {font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 400; color: white; }
+
+.product-section .container .col-third  button {background-color: var(--lightred); color: white; width: 100%; font-size: 16px; }
+
+.product-section .container .col-third  form {display: flex; flex-direction: column;row-gap: 20px;}
+
+.product-section .container .col-third  .payment {column-gap: 10px; border-top: 1px solid #8cd0d0; border-bottom: 1px solid #8cd0d0; padding: 15px 0}
+
+.product-section .container .col-third  .selectors {column-gap: 10px; flex-wrap: wrap; text-align: left; row-gap: 10px;}
+
+.product-section .container .col-third  .selectors p{font-size: 14px; padding-bottom: 5px;}
+
+.product-section .container .col-third  .selectors select {background-color: #2a9c9c; border-bottom-right-radius: 10px; color: white; border: none; width: 150px; padding: 10px 15px;}
+
+.product-section .container .col-third  .selectors input {background-color: #2a9c9c; border-bottom-right-radius: 10px; color: white; border: none; width: 80px; padding: 10px 15px; height: 17px;}
+
+.product-section .container .col-third  i {color: white; font-size: 24px; padding-right: 20px;}
+
+
+/* estilos de textos columna 3*/
 
 /* product */
 
