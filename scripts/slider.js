@@ -51,4 +51,22 @@ $('.carousel2').slick({
     },]
   });
 
+  $('.carousel-mobile').slick({
+    arrows: true,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    responsive: [{
+        breakpoint: 1250,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+        }
+    },]
+  });
 

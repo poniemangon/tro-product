@@ -106,25 +106,50 @@
         </section>
         <section class="product-section">
             <div class="container d-flex">
+                <img src="./images/misc2.png" alt="Tropico tostadores" class="misc">
                 <div class="col-first d-flex">
-                    <div class="d-flex sec-images">
-                        <img src="./images/little-box.png" alt="Colombia - Tropico tostadores">
-                        <img src="./images/etiqueta.png" alt="Colombia - Tropico tostadores">
+                    <div class="carousel-mobile">
+                        <img src="./images/group 1.png" alt="Colombia - Tropico tostadores">
+                        <img src="./images/etiqueta.webp" alt="Colombia - Tropico tostadores">
                     </div>
-                    <div class="main-image"><img src="./images/Group 1.png" alt="Colombia - Tropico tostadores"></div>
+                    <div class="sec-images d-flex desktop">
+                        <img src="./images/group 1.png" alt="Colombia - Tropico tostadores" class="thumbnail">
+                        <img src="./images/etiqueta.webp" alt="Colombia - Tropico tostadores" class="thumbnail">
+                    </div>
+                    <div class="main-image desktop">
+                        <img src="./images/Group 1.png" alt="Colombia - Tropico tostadores" class="main-img">
+                        <div class="d-flex share align-center">
+                            <h5>COMPARTIR EN</h5>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a> 
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a> 
+                        </div>
+                    </div>
                 </div>
+
+
+
                 <div class="col-third">
-                    <h3>Colombia - 
-                        Exelso Malla 16</h3>
-                    <h3 class="price">$13.000</h3>
-                    <h4><span>24</span> CUOTAS DE <span>$1.920,86</span></h4>
+                    <div class="d-flex share align-center">
+                        <h5>COMPARTIR EN</h5>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a> 
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a> 
+                    </div>
+                    <h2>Colombia - 
+                        Exelso Malla 16</h2>
+                    <div class="price-cuotas d-flex">
+                        <h2 class="price">$13.000</h2>
+                        <h4><span>24</span> CUOTAS DE <span>$1.920,86</span></h4>
+                    </div>
+
                     <p>Excelente selección de granos colombianos de la región de Cundinamarca. Proceso lavado.</p>
                     <p>Exquisitos aromas y sabores en taza, clásicas notas herbales, chocolates y caramelos.</p>
                     <form action="">
                         <div class="selectors d-flex">
                             <div>
                                 <p>PESO</p>
-                                <select name="" id="">
+                                <select name="" id="" aria-label="PESO">
                                     <option value="">125g</option>
                                     <option value="">250g</option>
                                     <option value="">500g</option>
@@ -149,10 +174,10 @@
                         </div>
                         <div class="d-flex payment">
                             <p>Ver medios de pago</p>
-                            <img src="./images/payment.png" alt="">
+                            <img src="./images/payment.png" alt="Formas de pago - Tropico tostadores">
                         </div>
 
-                        <button>Agregar al carrito</button>
+                        <button class="button-style">Agregar al carrito</button>
                         <div class="d-flex align-center icons">
                             <i class="fa-solid fa-lock"></i>
                             <div class="texts">
@@ -197,7 +222,7 @@
                                     <p>Region Cundiamarca</p>
                                     <h4>$9500</h4>
                                 </div>
-                                <div><button>Agregar al carrito</button></div>
+                                <div><button class="button-style">Agregar al carrito</button></div>
                             </div>
                         </div>
                     </div>
@@ -211,7 +236,7 @@
                                     <p>Excelso Malla 16</p>
                                     <h4>$8500</h4>
                                 </div>
-                                <div><button>Agregar al carrito</button></div>
+                                <div><button class="button-style">Agregar al carrito</button></div>
                             </div>
                         </div>
                     </div>
@@ -225,7 +250,7 @@
                                     <p>Catuai Tostado Intenso</p>
                                     <h4>$11000</h4>
                                 </div>
-                                <div><button>Agregar al carrito</button></div>
+                                <div><button class="button-style">Agregar al carrito</button></div>
                             </div>
                         </div>
                     </div>
@@ -239,7 +264,7 @@
                                     <p>Catuai Tostado Natural</p>
                                     <h4>$7500</h4>
                                 </div>
-                                <div><button>Agregar al carrito</button></div>
+                                <div><button class="button-style">Agregar al carrito</button></div>
                             </div>
                         </div>
                     </div>
@@ -308,4 +333,5 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./scripts/burger-menu.js"></script>
 <script src="./scripts/slider.js"></script>
+<script src="./scripts/thumbslider.js"></script>
 </html>
