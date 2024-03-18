@@ -68,7 +68,7 @@ button{ transition: ease 0.6s;}
 
 /* header */
 
-.header {background-color: var(--lightyellow); padding: 35px 0; position: fixed; width: 100%; box-shadow: 0px 1px 5px rgb(230, 230, 230); z-index: 2; }
+.header {background-color: var(--lightyellow); padding: 35px 0; position: fixed; width: 100%; box-shadow: 0px 1px 5px rgb(230, 230, 230); z-index: 2; min-height: 163px;}
 .header a {font-weight: 500;}
 .header i {cursor: pointer;}
 .header ul {column-gap: 20px;}
@@ -212,7 +212,7 @@ main {padding-top: 160px;}
 
 .product-section .container .col-third  .payment {column-gap: 10px; border-top: 1px solid #8cd0d0; border-bottom: 1px solid #8cd0d0; padding: 15px 0}
 
-.product-section .container .col-third  .selectors {column-gap: 10px; flex-wrap: wrap; text-align: left; row-gap: 10px;}
+.product-section .container .col-third  .selectors {column-gap: 10px; flex-wrap: wrap; text-align: left; row-gap: 10px; justify-content: center;}
 
 .product-section .container .col-third  .selectors p{font-size: 14px; padding-bottom: 5px;}
 
@@ -229,6 +229,7 @@ main {padding-top: 160px;}
 
 
 @media(max-width: 1250px){
+    .product-section .container .col-first {width: 100%; max-width: 550px;}
     .product-section .container .col-third .share {display: flex; padding: 0;}
     .product-section .container .misc {display: none; }
     .product-section .container .carousel-mobile .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--grey); color: white; }
